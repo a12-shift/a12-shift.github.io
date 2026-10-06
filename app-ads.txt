@@ -1,0 +1,1 @@
+# AppLovin MAX: paste here the line the AppLovin dashboard gives (Account, app-ads.txt) before release.

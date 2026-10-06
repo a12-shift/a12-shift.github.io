@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "Bricolage";
+  src: url("/fonts/BricolageGrotesque-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+}
+
+:root {
+  --ground: #0c0b10;
+  --raised: #17161d;
+  --rule: #2b2934;
+  --text: #f5f2ec;
+  --muted: #a29dae;
+  --citron: #d4ff3a;
+  --tomato: #ff5533;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.wordmark {
+  font-family: "Bricolage", sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  text-decoration: none;
+}
+.wordmark span { color: var(--citron); }
+
+h1, h2 {
+  font-family: "Bricolage", sans-serif;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+h1 { font-size: clamp(36px, 9vw, 52px); margin: 40px 0 12px; }
+h2 { font-size: 24px; margin: 40px 0 8px; }
+
+p, li { color: var(--text); }
+.lede, .muted { color: var(--muted); }
+.updated { color: var(--muted); font-size: 15px; }
+
+a { color: var(--citron); }
+
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+.card {
+  background: var(--raised);
+  border-radius: 18px;
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.links a {
+  background: var(--citron);
+  color: var(--ground);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 14px;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 56px;
+  padding-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+footer a { color: var(--muted); }
